@@ -1,0 +1,39 @@
+div {
+    width: 100px;
+    height: 50px;
+    background-color: blueviolet;
+    position: relative;
+
+    animation-name: example1;
+    animation-duration: 2s;
+}
+
+.linear {
+    /*velocidade da animação*/
+    animation-timing-function: linear; 
+}
+
+.ease {
+    animation-timing-function: ease;
+}
+
+.ease-in {
+    animation-timing-function: ease-in;
+}
+
+.ease-out {
+    animation-timing-function: ease-out;
+}
+
+.ease-in-out {
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes example1 {
+    from {
+        left: 0;
+    }
+    to {
+        left: calc(100% - 100px) /*vai rodar 100% da tela - o tamanho do elemento, para não sumir*/
+    }
+}

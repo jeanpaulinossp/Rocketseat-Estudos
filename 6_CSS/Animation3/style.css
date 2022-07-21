@@ -1,0 +1,32 @@
+.ball {
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    position: relative;
+    border-radius: 100%;
+
+    animation-name: example1;
+    animation-duration: 2s;
+    animation-delay: 2s;
+
+    /*faz a animação parar no final da animação*/
+    animation-fill-mode: forwards;
+
+    /*mantém os valores definidos na primeira transição passada no keyframes */
+    animation-fill-mode: backwards;
+
+    /*pega os valores da primeira animação e fica travado na ultima transição passada*/
+    animation-fill-mode: both;
+
+}
+
+@keyframes example1 {
+    from {
+        left: 0;
+        background-color: aqua;
+    }
+
+    to {
+        left: calc(100% - 100px);
+    }
+}

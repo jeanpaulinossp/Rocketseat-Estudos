@@ -1,0 +1,77 @@
+.ball {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+
+    background-color: red;
+    position: relative;
+
+    animation-name:example-three; /*importando a animação criada - para funcionar precisa dos params abaixo*/
+    animation-duration: 10s; /*tempo da transição*/
+
+    animation-delay: 2s; /*demora 2 segundo para começar a executar a animação*/
+
+    animation-iteration-count: 2; /*quantas vezes a animação vai rolar*/
+    /* animation-iteration-count: infinite; roda a animação infinitamente */
+
+    /*define qual a direção que a animação ira começar*/
+    /* animation-direction: reverse; reverte a ordem */
+    /* animation-direction: alternate; o alternate vai uma vez e volta */
+    animation-direction: alternate-reverse; /*reverte e volta*/
+}
+
+/*criação das animações*/
+@keyframes example-one {
+    /*from: onde e como a animação vai começar*/
+    from {
+        background-color: blueviolet;
+    }
+    /*to: pra onde a animação tem que ir*/
+    to {
+        background-color: rosybrown;
+    }
+}
+
+@keyframes example-two {
+    /*quando a animação tiver em 0% (tempo) - O parametro da duration é dividido pela % passada*/
+    0% {
+        background-color: blueviolet;
+    }
+    25% {
+        background-color: rosybrown;
+    }
+    50% {
+        background-color: yellowgreen;
+    }
+    100% {
+        background-color: blue;
+    }
+}
+
+@keyframes example-three {
+    0% {
+        background-color: blue;
+        left: 0;
+        top: 0;
+    }
+    25% {
+        background-color: greenyellow;
+        left: 600px;
+        top: 0;
+    }
+    50% {
+        background-color: black;
+        left: 600px;
+        top: 500px;
+    }
+    75% {
+        background-color: aqua;
+        left: 0;
+        top: 500px;
+    }
+    100% {
+        background-color: crimson;
+        left: 0;
+        top: 0;
+    }
+}
