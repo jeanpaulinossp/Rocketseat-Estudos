@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "lib": ["dom", "DOM.Iterable", "ESNext"],            
+    "jsx": "react-jsx",                                  // permite escrever html dentro do ts com react
+    "moduleResolution": "node",                          
+    "resolveJsonModule": true,                           // permite a importação de arquivos json
+    "isolatedModules": true,                             
+    "allowJs": true,                                     // permite arquivos js e ts
+    "noEmit": true,                                      
+    "allowSyntheticDefaultImports": true,                
+    "esModuleInterop": true,                             
+    "forceConsistentCasingInFileNames": true,            
+    "strict": true,                                      
+    "skipLibCheck": true                                 
+  },
+    "include": ["src"]                                    // onde o código da aplicação estará
+}

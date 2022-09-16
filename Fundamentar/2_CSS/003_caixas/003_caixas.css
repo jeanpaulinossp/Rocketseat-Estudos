@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+}
+
+.block-inline {
+    height: 100px;
+    border: 1px solid red;
+    width: 10px;
+    /* display: inline;  */
+    /* A div é block por padrão e obedece as especificações, mas pode ser feito a troca para inline; */
+    margin: 20px;
+    /* O margin quando é usado no block, empurra pra baixo e pro lado */
+}
+
+.inline-block {
+    width: 100px;
+    height: 100px;
+    border: 1px solid green;
+    /* display: block; */
+    /* O span por padrão é inline e não obedece as especificações de tamanho, mas pode ser trocado. */
+    margin: 20px;
+    /* O margin quando é usado no inline, empurra somente para o lado */
+}
+
+.margin {
+    border: 1px solid red;
+    width: 100px;
+    height: 100px;
+    margin: 15px 150px;
+}

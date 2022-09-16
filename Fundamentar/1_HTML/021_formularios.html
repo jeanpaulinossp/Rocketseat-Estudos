@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+
+    <form action="">
+        <fieldset>
+            <legend>Contato</legend>
+            <label for="">Nome</label>
+            <input type="text">
+            <button>Enviar</button>
+        </fieldset>
+    </form>
+
+    <br>
+
+    <label for="nome">
+        Nome:
+        <input type="text">
+    </label>
+    ou
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome">
+
+    <!-- button para enviar -->
+    <button type="submit">Enviar</button>
+    <!-- button para limpar -->
+    <button type="reset">Limpar</button>
+    <!-- button para desabilitar botão (usar junto com regras JS, para enviar que a pessoa envie o form antes de preencher tudo) -->
+    <button disabled>Enviar</button>
+
+    <!-- datalist -->
+
+    <input type="text"
+    list="fruitdata"
+    placeholder="Escolha uma Fruta"/>
+    <datalist id="fruitdata">
+        <option>banana</option>
+        <option>manga</option>
+        <option>laranja</option>
+        <option>apple</option>
+        <option>uva</option>
+    </datalist>
+
+    <input type="color" list="colorsdata"/>
+    <datalist id="colorsdata">
+        <option>#ff0000</option>
+        <option>#00ff00</option>
+    </datalist>
+
+    <br><br>
+    
+    <form action="">
+        Password2: <input type="password" pattern="[0-9a-fA-F]"{4,8} title="Minimo 4 e no máximo 8 caracteres" required>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <br>
+
+    <form action="">
+        Email: <input type="email" name="" id="">
+        <button type="submit">Enviar</button>
+    </form>
+
+    <br>
+
+    <form action="">
+        Digite o seu site: <input type="url"
+        value="https://"
+        >
+        <button type="submit">Enviar</button>
+    </form>
+
+    <br>
+
+    <form action="">
+        <input type="file">
+        <button type="submit">Enviar</button>
+    </form>
+
+    <br>
+
+    <form action="">
+        <input type="color">
+        <button type="submit">Enviar</button>
+    </form>
+
+    <br>
+
+    <form action="">
+        <input type="checkbox" >
+        <button type="submit">Enviar</button>
+    </form>
+
+    <br>
+
+    <form action="">
+        <input type="range" min="-10" max="10" step="1" >
+        <button type="submit">Enviar</button>
+    </form>
+
+    <br>
+
+    <form action="">
+        <input type="date">
+        <input type="datetime-local">
+        <input type="datetime">
+        <button type="submit">Enviar</button>
+    </form>
+
+
+</body>
+</html>

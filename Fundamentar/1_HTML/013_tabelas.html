@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+</head>
+<body>
+    <table>
+        <caption>Produtos x Vendidos por Loja</caption>
+
+        <!-- coolgroup é usado para colocar estilos nas colunas da tabela -->
+        <colgroup>
+            <col>
+            <col span="2" style="background-color: red;">
+            <col span="2" style="background-color: blue;">
+        </colgroup>
+
+        <thead>
+            <tr>
+                <!-- scope é usado para ajudar na acessibilidade -->
+                <th rowspan="2"></th>
+                <th colspan="2" scope="colgroup">Afonso Pena</th>
+                <th colspan="2" scope="colgroup">Antonia Pereira</th>
+            </tr>
+
+            <tr>
+                <th scope="col">Produzidos</th>
+                <th scope="col">Vendidos</th>
+                <th scope="col">Produzidos</th>
+                <th scope="col">Vendidos</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th scope="row">Vassouras</th>
+                <th scope="row">50</th>
+                <th scope="row">30</th>
+                <th scope="row">20</th>
+                <th scope="row">20</th>
+            </tr>
+
+            <tr>
+                <th scope="row">Baldes</th>
+                <th scope="row">10</th>
+                <th scope="row">10</th>
+                <th scope="row">30</th>
+                <th scope="row">25</th>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

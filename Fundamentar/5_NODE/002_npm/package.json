@@ -1,0 +1,14 @@
+{
+  "name": "rocketseat_node",
+  "version": "1.0.0",
+  "description": "aprendendo NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Jean Paulino",
+  "license": "ISC",
+  "devDependencies": {
+    "cfonts": "^3.1.1"
+  }
+}
